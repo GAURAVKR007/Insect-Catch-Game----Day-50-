@@ -50,10 +50,11 @@ h1 {
     justify-content: center;
     height: 100vh;
     width: 100vw;
+    transition: margin 0.5s ease-out;
 }
 
 .screen.up {
-    margin-top: -200vh;
+    margin-top: -100vh;
 }
 
 .insects-list {
@@ -122,7 +123,7 @@ h1 {
     top: 0;
     left: 50%;
     transform: translate(-50%,-150%);
-    transform: transform 0.4s ease-in;
+    transition: transform 0.4s ease-in;
 }
 
 #message.visible {
@@ -139,10 +140,7 @@ h1 {
     height: 100px;
     position: absolute;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.3s ease-in-out;
-    top: 200px;
-    left: 300px;
-    
+    transition: transform 0.3s ease-in-out; 
 }
 
 .insect.caught {
